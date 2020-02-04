@@ -10,6 +10,7 @@
     "@types/node": "^13.7.0",
     "@types/react": "^16.9.19",
     "@types/react-dom": "^16.9.5",
+    "prettier": "^1.19.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.1",
@@ -19,7 +20,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "standard && react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc -p .",
+    "fix": "gts fix",
+    "prepare": "npm.cmd run compile",
+    "pretest": "npm.cmd run compile",
+    "posttest": "npm.cmd run check"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,6 +45,9 @@
     ]
   },
   "devDependencies": {
-    "standard": "^14.3.1"
+    "standard": "^14.3.1",
+    "gts": "^1.1.2",
+    "typescript": "~3.7.0",
+    "@types/node": "^10.0.3"
   }
 }
