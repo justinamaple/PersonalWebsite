@@ -3,6 +3,12 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  function greeter(person: string) {
+    return 'Hello, ' + person;
+  }
+
+  let user = 'Jane User';
+
   return (
     <div className="App">
       <header className="App-header">
