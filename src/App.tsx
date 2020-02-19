@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Album from './Album';
+import Album from './Album.tsx';
 
 function App() {
   function greeter(person: string) {
